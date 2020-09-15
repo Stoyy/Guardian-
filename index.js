@@ -19,7 +19,7 @@ const r = 'RANDOM';
 // READY
 bot.on('ready', () => {
     console.log(`${bot.user.username} is Active!`)
-    bot.user.setActivity('.help | Discord.io/Stoyy', {
+    bot.user.setActivity('.help | Artic', {
         type: "PLAYING"
     });
 });
