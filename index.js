@@ -25,7 +25,7 @@ bot.on('ready', () => {
 });
 
 bot.on('guildMemberAdd', member => {
-    member.send(`Hello ${member}. Welcome to ${member.guild.name}. If you need any type of support, you can go to **#┌✍fast-support** or you can go to #├📧ticket-support!`)
+    member.send(`Hello ${member}. Welcome to ${member.guild.name}. !`)
 });
 
 bot.login(process.env.TOKEN);
