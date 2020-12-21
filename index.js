@@ -153,7 +153,7 @@ bot.on('message', message => {
                 .addField('me', '`.me`-Shows your Discord information.', true)
                 .addField('whois', '`.whois`-Show someone elses Discord information.', true)
                 .addField('avatar', '`.avatar`-Shows your avatar or someone you mentioned.', true)
-                .addField('noah', '`.noah`-Gives you noah\'s special command.')
+                .addField('website', '`.website`-Gives you Cozy\'s website.')
                 .setThumbnail(message.author.displayAvatarURL())
                 .addField('help', '`help`-helps you', true)
                 .addField('serverinfo', '`.serverinfo`-Shows information about the server', true)
@@ -210,22 +210,21 @@ bot.on('message', message => {
                 .setThumbnail(MEMBER.displayAvatarURL())
             message.channel.send(whoEmbed)
             break;
-        case 'noah':
+        case 'website':
             const noah = new Discord.MessageEmbed()
                 .setTitle('Click Me!')
                 .setColor(r)
-                .setDescription('NOAH IS A HOTTIE AND AWESOME GUY AND YOU SHOULD DEFINITELY GIVE HIM NITRO. 😏🥵')
-                .setFooter('DO IT DO IT DO IT DO IT DO IT')
+                .setDescription('CozyModzZ website:')
+                .setFooter('Alwaays the safest cheats')
                 .setAuthor(`${message.author.tag}`)
-                .setURL('https://sourceb.in/6d85db0455')
-            message.channel.send(noah)
-            message.channel.send('Get noah nitro!')
+                .setURL('http://cozymodz.ml/')
+         
             break;
-        case 'stoyy':
-            if (!args[1]) message.channel.send('What do you want from the stoyy catagory? `.stoyy links`, `.stoyy menu` or `.sotyy invite`')
-            if (args[1] === 'menu') message.channel.send('Stoyy meny is not out yet!')
+        case 'cozy':
+            if (!args[1]) message.channel.send('What do you want from the stoyy catagory? `.cozy links`, `.cozy menu` or `.cozy invite`')
+            if (args[1] === 'menu') message.channel.send('Cozy 1.1 https://rekonise.com/cozy-11-z9s57 ')
             if (args[1] === 'links') message.channel.send('**Youtube Link** https://www.youtube.com/channel/UC8hyQRTcFoes8IBR3XRGeJQ\n**Discord Link**https://discord.gg/FgV8Gjf')
-            if (args[1] === '') message.channel.send('https://discord.gg/tYNCjdq')
+            if (args[1] === '') message.channel.send('https://discord.gg/uQ4WHuArHv')
             break;
         case 'suggestion':
             if (!args[1]) {
@@ -540,7 +539,7 @@ bot.on('message', async message => {
 // OTHER LOGS
 bot.on('message', message => {
 
-    const logChannel1 = message.guild.channels.cache.find(ch => ch.name === "╠n-word-logs")
+    const logChannel1 = message.guild.channels.cache.find(ch => ch.name === "《📰》audit-log")
     if (!logChannel1) return;
 
     if (message.content.toLocaleLowerCase().includes('nigga')) {
@@ -629,7 +628,7 @@ bot.on('message', async message => {
 
 // DELETE MSG LOGS
 bot.on('messageDelete', async message => {
-    const logChannel = message.guild.channels.cache.find(ch => ch.name === "╠deleted-msg-logs")
+    const logChannel = message.guild.channels.cache.find(ch => ch.name === "《📰》audit-log")
     if (!logChannel) return;
 
     const lembed = new Discord.MessageEmbed()
