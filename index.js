@@ -211,7 +211,7 @@ bot.on('message', message => {
             message.channel.send(whoEmbed)
             break;
         case 'website':
-            const noah = new Discord.MessageEmbed()
+            const website = new Discord.MessageEmbed()
                 .setTitle('Click Me!')
                 .setColor(r)
                 .setDescription('CozyModzZ website:')
@@ -221,8 +221,8 @@ bot.on('message', message => {
          
             break;
         case 'cozy':
-            if (!args[1]) message.channel.send('What do you want from the stoyy catagory? `.cozy links`, `.cozy menu` or `.cozy invite`')
-            if (args[1] === 'menu') message.channel.send('Cozy 1.1 https://rekonise.com/cozy-11-z9s57 ')
+            if (!args[1]) message.channel.send('What do you want from the cozy catagory? `.cozy links`, `.cozy menu` or `.cozy invite`')
+            if (args[1] === 'menu') message.channel.send('Cozy 1.1 https://rekonise.com/cozy-11-gtcxy ')
             if (args[1] === 'links') message.channel.send('**Youtube Link** https://www.youtube.com/channel/UC8hyQRTcFoes8IBR3XRGeJQ\n**Discord Link**https://discord.gg/FgV8Gjf')
             if (args[1] === '') message.channel.send('https://discord.gg/uQ4WHuArHv')
             break;
@@ -301,7 +301,7 @@ bot.on('message', message => {
             ]
             message.reply('rolled a ' + rollDie[Math.floor(Math.random() * rollDie.length)]);
             break;
-        case 'embed':
+        case 'announcement':
             if (!args[1]) return message.channel.send('What should I turn into a embed?')
             let text = args.slice(1).join(" ")
             let custom = new Discord.MessageEmbed()
