@@ -224,7 +224,7 @@ bot.on('message', message => {
             if (!args[1]) message.channel.send('What do you want from the cozy catagory? `.cozy links`, `.cozy menu` or `.cozy invite`')
             if (args[1] === 'menu') message.channel.send('Cozy 1.1 https://rekonise.com/cozy-11-gtcxy ')
             if (args[1] === 'links') message.channel.send('**Youtube Link** https://www.youtube.com/channel/UC8hyQRTcFoes8IBR3XRGeJQ\n**Discord Link**https://discord.gg/FgV8Gjf')
-            if (args[1] === '') message.channel.send('https://discord.gg/uQ4WHuArHv')
+            if (args[1] === '') message.channel.send(' https://discord.gg/uQ4WHuArHv')
             break;
         case 'suggestion':
             if (!args[1]) {
