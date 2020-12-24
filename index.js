@@ -19,7 +19,7 @@ const r = 'RANDOM';
 // READY
 bot.on('ready', () => {
     console.log(`${bot.user.username} is Active!`)
-    bot.user.setActivity('Happy Holidays!', {
+    bot.user.setActivity('Help me get hosting!', {
         type: "WATCHING"
     });
 });
