@@ -407,7 +407,7 @@ bot.on('message', message => {
             break;
         case '8ball':
             const ball = [
-                'Im not sure..',
+                'Im not sure...',
                 'Maybe',
                 'Yes!',
                 'Ask again later',
