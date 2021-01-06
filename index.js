@@ -13,7 +13,7 @@ const {
 const userCreatedPolls = new Map();
 const fetch = require("node-fetch");
 const canvas = require('canvacord');
-const PREFIX = '.';
+const PREFIX = '-';
 const r = 'RANDOM';
 
 // READY
