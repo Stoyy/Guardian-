@@ -19,7 +19,7 @@ const r = 'RANDOM';
 // READY
 bot.on('ready', () => {
     console.log(`${bot.user.username} is Active!`)
-    bot.user.setActivity('Help me get hosting!', {
+    bot.user.setActivity('cozymodz.ml', {
         type: "WATCHING"
     });
 });
