@@ -45,7 +45,7 @@ bot.on("ready", async () => {
 
 
 bot.on('guildMemberAdd', async member => {
-	const channel = member.guild.channels.find(ch => ch.name === '📰・audit-log');
+	const channel = member.guild.channels.find(ch => ch.name === '👋・welcome');
 	if (!channel) return;
 
 	const canvas = Canvas.createCanvas(1200, 250);
@@ -84,7 +84,7 @@ bot.on('guildMemberAdd', async member => {
 
 
 bot.on('guildMemberRemove', async member => {
-	const channel = member.guild.channels.find(ch => ch.name === '📰・audit-log');
+	const channel = member.guild.channels.find(ch => ch.name === '👋・welcome');
 	if (!channel) return;
 
 	const canvas = Canvas.createCanvas(1200, 250);
